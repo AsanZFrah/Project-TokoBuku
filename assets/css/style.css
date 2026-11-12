@@ -188,3 +188,258 @@ body {
         margin-top: 10px;
     }
 }
+
+/* =================================
+   ABOUT US - RUANG BACA
+================================= */
+
+.about-section {
+    position: relative;
+    overflow: hidden;
+    padding: 55px 0;
+    background: linear-gradient(
+        135deg,
+        #fffaf2,
+        #f4f6fc,
+        #fff8ec
+    );
+    color: #172b4d;
+}
+
+/* Heading */
+
+.about-heading {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-label {
+    display: inline-block;
+    padding: 10px 22px;
+    margin-bottom: 18px;
+    border-radius: 50px;
+    background: #fce8c9;
+    color: #a75b20;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.about-heading h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #172b4d;
+    margin-bottom: 15px;
+}
+
+.about-heading p {
+    color: #64748b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Image */
+
+.about-image-wrapper {
+    position: relative;
+    padding: 12px;
+    border-radius: 30px;
+    background: #ffffff;
+    box-shadow: 0 20px 50px rgba(23, 43, 77, 0.12);
+    transition: 0.4s ease;
+}
+
+.about-image-wrapper:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 55px rgba(23, 43, 77, 0.18);
+}
+
+.about-image {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 22px;
+    display: block;
+}
+
+/* Content */
+
+.about-content {
+    padding: 10px 5px;
+}
+
+.about-subtitle {
+    color: #d18b36;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.about-content h3 {
+    font-size: 32px;
+    line-height: 1.35;
+    font-weight: 800;
+    margin: 15px 0 20px;
+    color: #172b4d;
+}
+
+.about-content > p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.about-feature-title {
+    font-weight: 800;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    color: #172b4d;
+}
+
+/* Feature Cards */
+
+.about-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.about-feature {
+    padding: 18px 13px;
+    background: #ffffff;
+    border: 1px solid #edf0f5;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(23, 43, 77, 0.06);
+    transition: all 0.3s ease;
+}
+
+.about-feature:hover {
+    transform: translateY(-7px);
+    border-color: #e8b76f;
+    box-shadow: 0 15px 30px rgba(23, 43, 77, 0.12);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 13px;
+    border-radius: 15px;
+    background: #fff0d8;
+    color: #bd7829;
+    font-size: 23px;
+}
+
+.about-feature h6 {
+    font-weight: 800;
+    font-size: 14px;
+    color: #172b4d;
+}
+
+.about-feature p {
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Button */
+
+.about-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 25px;
+    border-radius: 50px;
+    background: #172b4d;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.about-button:hover {
+    background: #d18b36;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Quote */
+
+.about-quote {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 30px;
+    border-radius: 22px;
+    background: linear-gradient(
+        100deg,
+        #fce8c9,
+        #fff3e0
+    );
+}
+
+.about-quote i {
+    font-size: 35px;
+    color: #c17c2d;
+}
+
+.about-quote p {
+    margin: 0;
+    color: #40516b;
+    line-height: 1.8;
+}
+
+/* Responsive Mobile */
+
+@media (max-width: 991px) {
+    .about-image {
+        height: 380px;
+    }
+
+    .about-content h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-section {
+        padding: 30px 0;
+    }
+
+    .about-heading h2 {
+        font-size: 28px;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+
+    .about-content h3 {
+        font-size: 25px;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .about-feature {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .feature-icon {
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+
+    .about-quote {
+        padding: 20px;
+        align-items: flex-start;
+    }
+}

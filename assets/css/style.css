@@ -1,3 +1,7 @@
+/* =========================
+   GLOBAL
+========================= */
+
 body {
   font-family: Raleway, sans-serif;
   background: #f6f8fd;
@@ -16,6 +20,11 @@ body {
   opacity: .25;
 }
 
+
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar-light .navbar-nav .nav-link {
   color: #212529 !important;
   font-size: 16px;
@@ -27,6 +36,11 @@ body {
   color: #0d6efd !important;
 }
 
+
+/* =========================
+   FEATURE ICON
+========================= */
+
 .feature-icon-1 {
   display: inline-flex;
   align-items: center;
@@ -37,6 +51,11 @@ body {
   color: #fff;
   border-radius: 100%;
 }
+
+
+/* =========================
+   SOCIAL MEDIA
+========================= */
 
 .btn-social-media {
   color: #31316a;
@@ -58,7 +77,11 @@ body {
   border-color: #0d6efd;
 }
 
-/* Footer */
+
+/* =========================
+   FOOTER
+========================= */
+
 .footer .copyright a {
   color: #ee5050;
   text-decoration: none;
@@ -78,7 +101,10 @@ body {
 }
 
 
-/* Cover Toko Buku */
+/* =========================
+   COVER TOKO BUKU
+========================= */
+
 .book-hero {
     background-color: #879b83;
     color: white;
@@ -130,13 +156,22 @@ body {
     object-fit: contain;
 }
 
+
+/* =========================
+   RESPONSIVE HERO
+========================= */
+
 @media (max-width: 768px) {
     .book-hero-title {
         font-size: 34px;
     }
 }
 
-/* Navbar Toko Buku */
+
+/* =========================
+   NAVBAR TOKO BUKU
+========================= */
+
 .bookstore-navbar {
     background-color: #f3ead7;
     padding: 18px 0;
@@ -178,6 +213,11 @@ body {
     color: white;
 }
 
+
+/* =========================
+   RESPONSIVE NAVBAR
+========================= */
+
 @media (max-width: 991px) {
     .bookstore-link {
         margin: 5px 0;
@@ -186,5 +226,98 @@ body {
     .bookstore-nav-button {
         display: inline-block;
         margin-top: 10px;
+    }
+}
+
+
+/* =========================
+   OUR SERVICES
+========================= */
+
+#services {
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+
+/* Judul dan deskripsi Services */
+
+#services .lead {
+    color: #6f7b72;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Card Services */
+
+#services .card {
+    background-color: #ffffff;
+    border: 1px solid #e1e8df !important;
+    box-shadow: 0 8px 25px rgba(83, 102, 80, 0.08) !important;
+    transition: all 0.3s ease;
+}
+
+
+/* Efek hover */
+
+#services .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(83, 102, 80, 0.15) !important;
+}
+
+
+/* Icon Services */
+
+#services .feature-icon-1 {
+    width: 60px;
+    height: 60px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #a8bfa3 !important;
+    border-radius: 18px;
+}
+
+
+/* Icon di dalam Services */
+
+#services .feature-icon-1 i {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+
+/* Judul card */
+
+#services h3 {
+    color: #2f3a32;
+}
+
+
+/* Deskripsi card */
+
+#services .card p {
+    color: #718078;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   RESPONSIVE SERVICES
+========================= */
+
+@media (max-width: 768px) {
+    #services {
+        border-radius: 20px;
+    }
+
+    #services .card-body {
+        padding: 30px !important;
     }
 }

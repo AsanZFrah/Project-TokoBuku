@@ -28,52 +28,50 @@
 </head>
 
 <body id="home" class="d-flex flex-column h-100">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light py-4 bg-nav">
-        <div class="container">
-            <!-- Brand -->
-            <a class="navbar-brand" href="https://pustakakoding.com">
-                <img src="assets/img/logo.svg" alt="Digital Creative" width="42" height="42" class="d-inline-block mt--2 me-2">
-                <span class="text-body fs-4 fw-bolder">Digital Creative</span>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bookstore-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand bookstore-brand" href="#home">
+            <i class="bi bi-book-half me-2"></i>
+            <span>Ruang Baca</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link bookstore-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bookstore-link" href="#services">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bookstore-link" href="#about">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bookstore-link" href="#portfolio">Koleksi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link bookstore-link" href="#contact">Kontak</a>
+                </li>
+            </ul>
+
+            <a href="#portfolio" class="btn bookstore-nav-button">
+                Jelajahi Buku <i class="bi bi-arrow-right ms-1"></i>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse py-3 py-lg-1" id="navbarSupportedContent">
-                <!-- Menu -->
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mx-3" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <!-- Social Media -->
-                <div class="d-flex mt-3 ms-3 mt-md-0 ms-md-0">
-                    <a href="https://facebook.com/pustaka.koding" target="_blank" class="btn btn-social-media me-3">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/pustakakoding/" target="_blank" class="btn btn-social-media me-3">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCbgv9z5lRwtXX_lUZ5-x8Ew" target="_blank" class="btn btn-social-media me-3">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-                    <a href="https://github.com/pustakakoding" target="_blank" class="btn btn-social-media">
-                        <i class="bi bi-github"></i>
-                    </a>
-                </div>
-            </div>
+            
         </div>
     </nav>
 
@@ -145,31 +143,137 @@
             </div>
         </div>
 
-        <!-- About -->
-        <div id="about" class="container text-center py-5">
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <h3 class="fw-bold lh-2 mb-3">ABOUT US</h3>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container py-5">
+
+        <!-- Section Heading -->
+        <div class="about-heading text-center mb-5">
+            <span class="about-label">
+                <i class="bi bi-book-half"></i> TENTANG KAMI
+            </span>
+
+            <h2>Mengenal Ruang Baca</h2>
+
+            <p>
+                Tempat menemukan inspirasi dan pengetahuan
+                melalui berbagai pilihan buku.
+            </p>
+        </div>
+
+        <!-- About Content -->
+        <div class="row align-items-center g-5">
+
+            <!-- Image -->
+            <div class="col-lg-5">
+                <div class="about-image-wrapper">
+                    <img
+                        src="assets/img/about-ruang-baca.png"
+                        alt="Suasana membaca di Ruang Baca"
+                        class="about-image">
                 </div>
             </div>
 
-            <div class="row align-items-center text-start g-5 py-4">
-                <div class="col-lg-5">
-                    <img src="assets/img/about.svg" class="d-block mx-lg-auto img-fluid" alt="Digital Creative" loading="lazy">
-                </div>
-                <div class="col-lg-7">
-                    <h4 class="fw-bold lh-2 mb-3">Creative Digital Agency For Your Business Solutions</h4>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    <ul>
-                        <li>First list item</li>
-                        <li>Second list item with a longer description</li>
-                        <li>Third list item to close it out</li>
-                    </ul>
-                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+            <!-- Description -->
+            <div class="col-lg-7">
+                <div class="about-content">
+
+                    <span class="about-subtitle">
+                        CERITA KAMI
+                    </span>
+
+                    <h3>
+                        Ruang Baca – Teman Terbaik
+                        Para Pecinta Buku
+                    </h3>
+
+                    <p>
+                        Ruang Baca hadir sebagai toko buku modern
+                        yang menyediakan berbagai pilihan buku
+                        berkualitas, mulai dari buku pelajaran,
+                        pengembangan diri, hingga novel favoritmu.
+                    </p>
+
+                    <p>
+                        Kami percaya bahwa membaca bukan hanya
+                        tentang membuka halaman buku, tetapi juga
+                        tentang membuka wawasan, menemukan
+                        inspirasi, dan mendapatkan pengalaman baru.
+                    </p>
+
+                    <h5 class="about-feature-title">
+                        Apa yang Kami Tawarkan?
+                    </h5>
+
+                    <div class="about-features">
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="bi bi-book"></i>
+                            </div>
+                            <div>
+                                <h6>Beragam Pilihan Buku</h6>
+                                <p>
+                                    Dari berbagai kategori
+                                    untuk semua pembaca.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="bi bi-cart-check"></i>
+                            </div>
+                            <div>
+                                <h6>Belanja Mudah</h6>
+                                <p>
+                                    Pengalaman berbelanja
+                                    yang praktis dan nyaman.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <div>
+                                <h6>Layanan Ramah</h6>
+                                <p>
+                                    Siap membantu kamu
+                                    menemukan buku favorit.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a href="#portfolio" class="about-button">
+                        Jelajahi Koleksi Buku
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+
                 </div>
             </div>
         </div>
+
+        <!-- Bottom Quote -->
+        <div class="about-quote mt-5">
+            <i class="bi bi-lightbulb"></i>
+            <p>
+                Mari temukan cerita dan pengetahuan baru
+                bersama <strong>Ruang Baca.</strong>
+                Karena setiap halaman memiliki sesuatu
+                yang berharga.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
 
         <!-- Portfolio -->
         <div id="portfolio" class="container text-center py-5">
